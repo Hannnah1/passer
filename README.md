@@ -1,4 +1,4 @@
-# passer
+# Passer
 Passive service locator, a python sniffer that identifies servers, clients, names and much more
 
 ## Introduction
@@ -18,7 +18,7 @@ glad to update the script.
 ## Installation
 
 ### Requirements
-- Python >=2.4 and <3.0
+- Python >=2.4 and <4.0
 - Python libraries (see [requirements.txt](/requirements.txt))
   - ipaddress
   - pytz
@@ -29,8 +29,6 @@ glad to update the script.
 	- for Ethernet manufacturers and service strings
 - ettercap, wireshark, and/or arp-scan
 	- for more Ethernet manufacturers
-- p0f version 2
-	- for the OS fingerprint file
 
 ### Ubuntu/Debian and deb-based distros
 ```bash
@@ -93,7 +91,7 @@ docker stop passer
 ### Sniff live as root
 
 ```bash
-/path/to/passer.py
+sudo /path/to/passer.py
 ```
 
 This sniffs from all network interfaces and sends all output
